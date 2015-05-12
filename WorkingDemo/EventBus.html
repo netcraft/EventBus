@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Our specific css -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-6">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Create new events</h3>
+            </div>
+            <div class="panel create-event">
+                <input class="form-control" type="text" data-create-name placeholder="Event name">
+                <input class="form-control" type="text" data-create-handler placeholder="Event handler">
+                <input type="button" class="btn btn-sm btn-primary js-create-event" value="Create Event">
+            </div>
+
+        </div>
+    </div>
+    <div class="col-sm-6">
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">Last event</h3>
+            </div>
+            <div class="panel-body" data-last-event>
+                ---
+            </div>
+        </div>
+
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Fire Event</h3>
+            </div>
+            <div class="panel-body js-events-list">
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="row">
+
+
+</div>
+
+</body>
+
+<!-- JQuery -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!-- EventBus implementation -->
+<script src="js/EventBus.js"></script>
+
+</html>
